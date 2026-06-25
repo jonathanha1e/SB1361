@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vote YES on SB 1361 — Call Pacheco & Rubio Now</title>
+<meta name="description" content="SB 1361 hearing is July 1. Tell Assemblymembers Pacheco and Rubio to vote yes and protect LA Metro transit projects from obstruction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F7F5F1;
+    --bg-card: #FFFFFF;
+    --bg-secondary: #EFEDE9;
+    --bg-danger: #FCEBEB;
+    --bg-info: #E6F1FB;
+    --bg-success: #EAF3DE;
+    --text-primary: #1A1A1A;
+    --text-secondary: #6B7280;
+    --text-danger: #A32D2D;
+    --text-info: #185FA5;
+    --text-success: #3B6D11;
+    --border: rgba(0,0,0,0.1);
+    --border-md: rgba(0,0,0,0.18);
+    --red-action: #C0392B;
+    --red-action-hover: #A93226;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1A1A;
+      --bg-card: #242424;
+      --bg-secondary: #2E2E2E;
+      --bg-danger: #3A1F1F;
+      --bg-info: #0C2A44;
+      --bg-success: #162A0A;
+      --text-primary: #F0EEE9;
+      --text-secondary: #9CA3AF;
+      --text-danger: #F09595;
+      --text-info: #85B7EB;
+      --text-success: #97C459;
+      --border: rgba(255,255,255,0.1);
+      --border-md: rgba(255,255,255,0.18);
+    }
+  }
+
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 2rem 1rem 4rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    background: var(--bg-danger);
+    border-left: 3px solid var(--red-action);
+    padding: 10px 16px;
+    margin-bottom: 1.5rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+
+  .banner-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-danger);
+    margin-bottom: 3px;
+  }
+
+  .banner-countdown {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-danger);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+  }
+
+  .bill-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    background: var(--bg-info);
+    color: var(--text-info);
+    padding: 3px 10px;
+    border-radius: var(--radius-md);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+  }
+
+  .sub {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .member-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .avatar-blue { background: var(--bg-info); color: var(--text-info); }
+  .avatar-green { background: var(--bg-success); color: var(--text-success); }
+
+  .member-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .member-district {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .transit-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    line-height: 1.55;
+  }
+
+  .transit-note strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 8px;
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0.5px solid var(--border-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: opacity 0.15s, background 0.15s;
+  }
+
+  .btn:hover { background: var(--bg-secondary); }
+
+  .btn.call {
+    background: var(--red-action);
+    border-color: var(--red-action);
+    color: #fff;
+  }
+
+  .btn.call:hover { background: var(--red-action-hover); }
+
+  .phone-number {
+    font-size: 11px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 7px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 0.5px solid var(--border);
+    margin: 1.5rem 0;
+  }
+
+  .script-box {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .script-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .script-text {
+    font-size: 13px;
+    color: var(--text-primary);
+    line-height: 1.65;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+
+  .copy-btn {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    background: var(--bg-card);
+    border: 0.5px solid var(--border-md);
+    border-radius: var(--radius-md);
+    padding: 6px 14px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .copy-btn:hover { color: var(--text-primary); background: var(--bg-secondary); }
+
+  .footer {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .footer a {
+    color: var(--text-info);
+    text-decoration: none;
+  }
+
+  .footer a:hover { text-decoration: underline; }
+
+  .cta-logo {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="banner">
+    <p class="banner-label">Assembly Local Government Committee</p>
+    <p class="banner-countdown" id="countdown">Calculating…</p>
+  </div>
+
+  <span class="bill-pill">SB 1361 · July 1, 2026 Hearing</span>
+  <h1>Don't let cities kill voter-approved transit</h1>
+  <p class="sub">Two committee members represent communities along LA Metro's planned rail lines. Call them before the July 1 vote and ask for an aye on SB 1361.</p>
+
+  <!-- PACHECO -->
+  <div class="card">
+    <div class="member-header">
+      <div class="avatar avatar-blue">BP</div>
+      <div>
+        <p class="member-name">Blanca Pacheco</p>
+        <p class="member-district">AD-64 · Downey, Norwalk, Paramount</p>
+      </div>
+    </div>
+    <p class="transit-note">
+      <strong>What's at stake:</strong> Southeast Gateway Line stops in Downey and Paramount — a rail line 10 years in the making that cities are now threatening to block over SB 79 density fears.
+    </p>
+    <div class="action-row">
+      <a class="btn call" href="tel:9163192064">
+        <i class="ti ti-phone" aria-hidden="true"></i> Call office
+      </a>
+      <a class="btn" href="mailto:assemblymember.pacheco@assembly.ca.gov">
+        <i class="ti ti-mail" aria-hidden="true"></i> Email
+      </a>
+    </div>
+    <p class="phone-number">(916) 319-2064</p>
+  </div>
+
+  <!-- RUBIO -->
+  <div class="card">
+    <div class="member-header">
+      <div class="avatar avatar-green">BR</div>
+      <div>
+        <p class="member-name">Blanca E. Rubio</p>
+        <p class="member-district">AD-48 · Baldwin Park, West Covina, SGV</p>
+      </div>
+    </div>
+    <p class="transit-note">
+      <strong>What's at stake:</strong> San Gabriel Valley communities depend on the A Line (Gold Line) — and the SB 79 backlash threatens the transit corridors her constituents rely on every day.
+    </p>
+    <div class="action-row">
+      <a class="btn call" href="tel:9163192048">
+        <i class="ti ti-phone" aria-hidden="true"></i> Call office
+      </a>
+      <a class="btn" href="mailto:assemblymember.rubio@assembly.ca.gov">
+        <i class="ti ti-mail" aria-hidden="true"></i> Email
+      </a>
+    </div>
+    <p class="phone-number">(916) 319-2048</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- SCRIPT -->
+  <div class="script-box">
+    <p class="script-label">
+      <i class="ti ti-message" aria-hidden="true" style="font-size:13px"></i> What to say
+    </p>
+    <p class="script-text" id="script-text">"Hi, my name is [name] and I'm a constituent calling to ask Assemblymember [Pacheco / Rubio] to vote yes on SB 1361 in the Local Government Committee on July 1st. Cities are using SB 79 density concerns as a pretext to block transit projects that voters already approved and funded — including projects in this district. SB 1361 stops that obstruction. Please vote aye. Thank you."</p>
+    <button class="copy-btn" onclick="copyScript()">
+      <i class="ti ti-copy" aria-hidden="true" style="font-size:13px"></i>
+      <span id="copy-label">Copy script</span>
+    </button>
+  </div>
+
+  <div class="footer">
+    <p>Hearing: <strong>July 1, 2026 · 1:30 pm</strong></p>
+    <p>Assembly Local Government Committee · Room 447, State Capitol</p>
+    <br>
+    <p>Shared by <a href="https://streetsforall.org" target="_blank" rel="noopener">Streets For All</a></p>
+  </div>
+
+</div>
+
+<script>
+function updateCountdown() {
+  var hearing = new Date('2026-07-01T13:30:00-07:00');
+  var now = new Date();
+  var diff = hearing - now;
+  var el = document.getElementById('countdown');
+  if (diff <= 0) {
+    el.textContent = 'Hearing is today — call now';
+    return;
+  }
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  var parts = [];
+  if (days > 0) parts.push(days + 'd');
+  if (hours > 0) parts.push(hours + 'h');
+  parts.push(mins + 'm until vote');
+  el.textContent = parts.join(' ');
+}
+updateCountdown();
+setInterval(updateCountdown, 30000);
+
+function copyScript() {
+  var raw = document.getElementById('script-text').textContent;
+  var cleaned = raw.replace(/[\u201C\u201D]/g, '"').replace(/[\u2018\u2019]/g, "'");
+  navigator.clipboard.writeText(cleaned).then(function() {
+    var label = document.getElementById('copy-label');
+    label.textContent = 'Copied!';
+    setTimeout(function() { label.textContent = 'Copy script'; }, 2000);
+  }).catch(function() {
+    var label = document.getElementById('copy-label');
+    label.textContent = 'Copy failed — try manually';
+  });
+}
+</script>
+</body>
+</html>
